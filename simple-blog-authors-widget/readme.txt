@@ -1,5 +1,6 @@
 === Simple Blog Authors Widget ===
-Author: mordauk
+Contributors: mordauk
+Author: Pippin Williamson
 Author URI: http://pippinsplugins.com
 Plugin URI: http://pippinspages.com/simple-blog-authors-widget/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
