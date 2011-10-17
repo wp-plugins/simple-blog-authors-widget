@@ -1,5 +1,5 @@
 === Simple Blog Authors Widget ===
-Author: Pippin Williamson
+Author: mordauk
 Author URI: http://pippinsplugins.com
 Plugin URI: http://pippinspages.com/simple-blog-authors-widget/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
@@ -16,7 +16,7 @@ This plugin will give you a simple widget that you can use to display your blog'
 
 The widget uses universal widget styling, so should fit perfectly into any WordPress theme.
 
-== Features ==
+Features
 
 1. Blog Authors Widget
 2. Widget Title Option
