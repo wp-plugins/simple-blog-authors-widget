@@ -1,13 +1,13 @@
 === Simple Blog Authors Widget ===
-Contributors: mordauk
 Author: Pippin Williamson
+Contributors: mordauk
 Author URI: http://pippinsplugins.com
 Plugin URI: http://pippinspages.com/simple-blog-authors-widget/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
 Tags: widget, widgets, authors, blog authors, simple
 Requires at least: 2.8
-Tested up to: 3.2.1
-Stable tag: 1.0
+Tested up to: 3.3.2
+Stable tag: 1.0.1
 
 This plugin lets provides a simple widget to list your blog's authors, including gravatar and post counts
 
@@ -32,6 +32,12 @@ Features
 == Screenshots ==
 
 Check out http://pippinsplugins.com/simple-blog-authors-widget/
+
+== Changelog ==
+
+* Fixed a bug that made it so you could not disable gravatars
+* Only authors with at least one post are listed now
+* Only pulls in users with a level greater than 0
 
 
 

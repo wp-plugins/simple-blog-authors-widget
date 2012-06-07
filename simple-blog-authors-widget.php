@@ -3,8 +3,9 @@
 Plugin Name: Simple Blog Authors Widget
 Plugin URI: http://pippinsplugins.com/simple-blog-authors-widget
 Description: Provides a widget to list blog authors, including gravatars, post counts, and bios
-Version: 1.0
+Version: 1.0.1
 Author: Pippin Williamson
+Contributors: mordauk
 Author URI: http://pippinsplugins.com
 */
 
@@ -24,7 +25,7 @@ class pippin_simple_authors_widget extends WP_Widget {
         extract( $args );
 		global $wpdb;
 		
-        $title = apply_filters('widget_title', $instance['title']);
+      $title = apply_filters('widget_title', $instance['title']);
 		$gravatar = $instance['gravatar'];
 		$count = $instance['count'];
 		
@@ -38,28 +39,33 @@ class pippin_simple_authors_widget extends WP_Widget {
 							<ul>
 							<?php
 
-								$authors = $wpdb->get_results("SELECT ID FROM $wpdb->users ORDER BY ID");
+								$authors = get_users( array( 'who' => 'authors', 'number' => 99999) );
 
 								foreach($authors as $author) {
 									
+									$post_count = count_user_posts($author->ID);
+																	
+									if( $post_count >= 1 ) {									
+																		
 									$author_info = get_userdata($author->ID);
 									
-									echo '<li>';
-									
-										echo '<div style="float: left; margin-left: 5px;">';
-
-										echo get_avatar($author->ID, 40);
-
-										echo '</div>';
-
-										echo '<a href="' . get_author_posts_url($author->ID) .'" title="View author archive">';
-											echo $author_info->display_name;
-											if($count) {
-												echo '(' . count_user_posts($author->ID) . ')';
+										echo '<li class="sbaw_author">';
+										
+											if( $gravatar ) {											
+												echo '<div style="float: left; margin-left: 5px;">';
+													echo get_avatar($author->ID, 40);
+												echo '</div>';
 											}
-										echo '</a>';
-
-									echo '</li>';
+											echo '<a href="' . get_author_posts_url($author->ID) .'" title="View author archive">';
+												echo $author_info->display_name;
+												if($count) {
+													echo '(' . $post_count . ')';
+												}
+											echo '</a>';
+	
+										echo '</li>';
+										
+									}
 								}							
 							?>
 							</ul>
@@ -79,7 +85,7 @@ class pippin_simple_authors_widget extends WP_Widget {
     /** @see WP_Widget::form */
     function form($instance) {	
 
-        $title = esc_attr($instance['title']);
+      $title = esc_attr($instance['title']);
 		$gravatar = esc_attr($instance['gravatar']);
 		$count = esc_attr($instance['count']);
 		
