@@ -4,10 +4,10 @@ Contributors: mordauk
 Author URI: http://pippinsplugins.com
 Plugin URI: http://pippinspages.com/simple-blog-authors-widget/
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
-Tags: widget, widgets, authors, blog authors, simple
+Tags: widget, widgets, authors, blog authors, simple, adopt-me
 Requires at least: 2.8
-Tested up to: 3.3.2
-Stable tag: 1.0.1
+Tested up to: 3.9
+Stable tag: 1.0.2
 
 This plugin lets provides a simple widget to list your blog's authors, including gravatar and post counts
 

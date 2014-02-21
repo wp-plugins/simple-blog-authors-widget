@@ -3,7 +3,7 @@
 Plugin Name: Simple Blog Authors Widget
 Plugin URI: http://pippinsplugins.com/simple-blog-authors-widget
 Description: Provides a widget to list blog authors, including gravatars, post counts, and bios
-Version: 1.0.1
+Version: 1.0.2
 Author: Pippin Williamson
 Contributors: mordauk
 Author URI: http://pippinsplugins.com
