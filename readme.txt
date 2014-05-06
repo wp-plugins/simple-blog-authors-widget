@@ -45,7 +45,7 @@ Check out http://metodiew.com/projects/simple-blog-authors-widget/
 * Only authors with at least one post are listed now
 * Only pulls in users with a level greater than 0
 
-(06/05/2014)
+= (06/05/2014) =
 * Version was changed to 1.0.3
 * The plugin authorship was changed from Pippin Williamson to Stanko Metodiev.
 * Fixed some notices for undefined variables.
