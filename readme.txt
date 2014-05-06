@@ -1,13 +1,13 @@
 === Simple Blog Authors Widget ===
-Author: Pippin Williamson
-Contributors: mordauk
-Author URI: http://pippinsplugins.com
-Plugin URI: http://pippinspages.com/simple-blog-authors-widget/
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
-Tags: widget, widgets, authors, blog authors, simple, adopt-me
+Author: Stanko Metodiev
+Contributors: metodiew
+Author URI: http://metodiew.com
+Plugin URI: http://metodiew.com/projects/simple-blog-authors-widget/
+Donate link: http://metodiew.com
+Tags: widget, widgets, authors, blog authors, simple
 Requires at least: 2.8
 Tested up to: 3.9
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 This plugin lets provides a simple widget to list your blog's authors, including gravatar and post counts
 
@@ -29,9 +29,15 @@ Features
 1. Upload the 'simple-blog-authors-widget' folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
+== Frequently Asked Questions ==
+
+= Simple Blog Authors Widget is gone after I updated to version 1.0.3? =
+
+The class name was changed, so you should add the widget again from Appearance => Widgets.
+
 == Screenshots ==
 
-Check out http://pippinsplugins.com/simple-blog-authors-widget/
+Check out http://metodiew.com/projects/simple-blog-authors-widget/
 
 == Changelog ==
 
@@ -39,6 +45,7 @@ Check out http://pippinsplugins.com/simple-blog-authors-widget/
 * Only authors with at least one post are listed now
 * Only pulls in users with a level greater than 0
 
-
-
-
+(06/05/2014)
+* Version was changed to 1.0.3
+* The plugin authorship was changed from Pippin Williamson to Stanko Metodiev.
+* Fixed some notices for undefined variables.
