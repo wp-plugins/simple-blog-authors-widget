@@ -40,6 +40,8 @@ The class name was changed, so you should add the widget again from Appearance =
 1. Dashboard Widgets
 2. Front End
 
+For more check out http://metodiew.com/projects/simple-blog-authors-widget/
+
 == Changelog ==
 
 * Fixed a bug that made it so you could not disable gravatars
